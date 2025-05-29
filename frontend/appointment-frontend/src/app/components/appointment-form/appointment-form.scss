@@ -1,0 +1,58 @@
+.form-container {
+  max-width: 600px;
+  margin: 84px auto 20px;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .date-time-fields {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    
+    .date-field {
+      flex: 3;
+    }
+    
+    .time-field {
+      flex: 2;
+
+      input[type="time"] {
+        font-size: 16px;
+        padding: 4px;
+        width: 100%;
+        min-height: 36px;
+
+        &::-webkit-calendar-picker-indicator {
+          cursor: pointer;
+          opacity: 0.8;
+          padding: 4px;
+        }
+
+        &::-webkit-datetime-edit {
+          padding: 4px;
+        }
+      }
+    }
+  }
+
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 16px;
+    }
+  }
+}
